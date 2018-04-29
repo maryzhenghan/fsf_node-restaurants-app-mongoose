@@ -2,3 +2,11 @@ language: node_js
 node_js: node
 services:
 - mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: dRm/BkQRBMcU1nWQktG/BuvNYXZQe9v9GBpec3sMzXdo7VDm2GHD9reWHpSKDLYvttE//w6ihoQy5z4rub1vjZ3EwYLkpNPZ8jWSX3F31AJTxleAalTrwx/sk0dT0Vcw6UbEOIMHFYazDPJTiIOT1xzLtQgspEH/Bz9FVTHAUekV2s/L/ePtRmZjMcILHR37Ke+I2i+79J8Ecoir7BLQHdUQUZFofdARkRXXSzSAKeygEMjcHavopUguSRKF28YUwKSArCn7rmlQdr09gMMLDjVG/bCwdR5SqhrJGj3vpU0Wsv212gGHPqcs5XAQkNnbJAD9iuoH+k3673wDR1mG5TuTngh+uKrL7w7AGgztUx8Z/3vspEiwtkGw4lSTK5TuOopcK2NgTzZHjgRWr44e+o0hs32WnlzUqdpkfedroOHb/ccIPPsIP+WXNCYV1S5/5vEHLjKhU8gNAxWJSQPt9otD9gctKEdGrPtppUDKdzGVthjewAC8vE5doHwogicTqCrzZDyafOQSlJ8kIhsgFCg5WenEG+WM0+fIbf5S9+JLzrzusbxRK9YLUkFSwDMrD5yzrvTrWHFZhZJuuyjjClqiFezkXRjSc/LoiVep65GMWWhfiTeWq02M4FRs6rfYmUVUJiV5DzsDsqNCeGzzW7IBN++rTyJ8h4K0Sc+0IIU=
+  app: https://calm-caverns-59812.herokuapp.com/
+  on:
+    repo: maryzhenghan/node-restaurants-app-mongoose
+    branch: feature/with-tests
